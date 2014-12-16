@@ -1,0 +1,4 @@
+applications:
+- name: StockWatch
+  command: node StockWatch.js
+  memory: 128M

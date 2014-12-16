@@ -1,0 +1,42 @@
+BLUEMIX
+=======
+
+https://ace.ng.bluemix.net/
+
+ IBM id: 	jonbrown@au1.ibm.com
+Jazz ID: 	ibmjbrown
+
+IBMum..1
+
+Remember, when signing in from desktop and command line clients 
+such as Git and Team Concert, use your Jazz ID with your IBM password.
+
+1. Connect to Bluemix:
+
+   cf api https://api.ng.bluemix.net
+
+2. Log into Bluemix:
+
+   cf login -u jonbrown@au1.ibm.com
+   cf target -o jonbrown@au1.ibm.com -s dev
+
+3. Deploy your app:
+
+   cf push JBnode1
+
+4. Access your app: 
+
+   http://JBnode1.mybluemix.net
+
+5. To add a package (ie effectively do an 'npm xyz') include this in package.json:
+
+"dependencies": {
+	"xyz": ""
+  },
+ 
+
+6. For help in debugging / crash:
+
+cf log <app> --recent 
+
+and look for "exit_description" - for example "out of memory"

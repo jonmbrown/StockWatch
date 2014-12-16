@@ -1,0 +1,16 @@
+{
+  "name":"StockWatch",
+  "version": "0.0.1",
+  "description": "My first substantial webapp for Bluemix",
+  "dependencies": {
+	"request": "",
+	"cheerio": ""
+  },
+  "scripts": {
+    "start": "node StockWatch.js"
+  },
+  "engines": {
+		"node": "0.10.26"
+  },
+  "repository": {}
+}
